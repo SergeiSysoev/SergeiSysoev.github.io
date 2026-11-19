@@ -1,6 +1,6 @@
 # sergeisysoev.github.io
 
-Home page for Serge Sysoev's free tools: https://sergeisysoev.github.io/
+Home page for Sergei Sysoev's free tools: https://sergeisysoev.github.io/
 
 Links to:
 - HVAC Pro Calculator — https://sergeisysoev.github.io/hvac-pro-calculator/
