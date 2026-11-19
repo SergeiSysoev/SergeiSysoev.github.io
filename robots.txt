@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sergeisysoev.github.io/sitemap.xml

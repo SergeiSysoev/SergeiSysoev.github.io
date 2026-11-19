@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Serge Sysoev — HVAC &amp; Sheet Metal Tools</title>
+<meta name="description" content="Free tools for the HVAC and sheet metal trade by Serge Sysoev: a field HVAC calculator, an apprentice test trainer, a Washington motorcycle test trainer and a duct-run game. English / Russian.">
+<meta property="og:title" content="Serge Sysoev — HVAC & Sheet Metal Tools">
+<meta property="og:description" content="Free tools for the trade: HVAC field calculator, apprentice test trainer, WA motorcycle test trainer, and more.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sergeisysoev.github.io/">
+<meta property="og:image" content="https://sergeisysoev.github.io/hvac-pro-calculator/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sergeisysoev.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<script>
+(function(){var l=null;try{l=localStorage.getItem("home_lang");}catch(e){}
+if(l!=="en"&&l!=="ru"){l=((navigator.language||"").toLowerCase().indexOf("ru")===0)?"ru":"en";}
+document.documentElement.setAttribute("data-lang",l);document.documentElement.lang=l;})();
+</script>
+<style>
+:root{
+  --bg:#F4F6F9; --surface:#FFFFFF; --text:#121826; --muted:#5B6576; --line:#E2E7EF;
+  --accent:#1F5FBF; --on-accent:#FFFFFF; --accent-soft:#E8F0FC; --soon:#8A6D1F; --soon-bg:#FBF3DC;
+  --shadow:0 1px 2px rgba(16,24,40,.05),0 4px 14px rgba(16,24,40,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0B0F17; --surface:#141B27; --text:#E8EDF5; --muted:#9AA6BA; --line:#243044;
+    --accent:#7FB0FF; --on-accent:#0B0F17; --accent-soft:#18263D; --soon:#E7C46A; --soon-bg:#2B2410;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:16px;line-height:1.5;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px 40px}
+header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin:8px 0 22px}
+h1{font-size:28px;line-height:1.2;margin:0 0 6px;font-weight:700;letter-spacing:-.3px}
+.sub{color:var(--muted);margin:0;max-width:520px}
+.lang{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;flex:none;background:var(--surface)}
+.lang button{border:0;background:transparent;color:var(--muted);font:600 14px Inter,system-ui,sans-serif;padding:8px 12px;min-width:44px;min-height:40px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+.card{display:flex;flex-direction:column;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:16px;
+  padding:18px;color:inherit;text-decoration:none;box-shadow:var(--shadow);transition:border-color .15s, transform .15s}
+a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+a.card:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.top{display:flex;align-items:center;gap:12px}
+.ico{width:46px;height:46px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:none}
+.ico svg{width:28px;height:28px}
+.ico img{width:46px;height:46px;border-radius:12px}
+h2{font-size:18px;line-height:1.3;margin:0;font-weight:700}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.tag{font-size:12.5px;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:2px 9px}
+.go{font-weight:600;color:var(--accent);font-size:15px}
+.soon{align-self:flex-start;font-size:12.5px;font-weight:700;color:var(--soon);background:var(--soon-bg);border-radius:999px;padding:3px 10px}
+.card.off{opacity:.85}
+footer{margin-top:28px;color:var(--muted);font-size:14px;text-align:center}
+[data-lang="en"] [lang="ru"], [data-lang="ru"] [lang="en"]{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Serge Sysoev</h1>
+      <p class="sub"><span lang="en">Free tools I built for the HVAC and sheet metal trade — and a few more. Pick one below.</span><span lang="ru">Бесплатные инструменты, которые я сделал для HVAC и sheet metal, и не только. Выберите нужное ниже.</span></p>
+    </div>
+    <div class="lang" role="group" aria-label="Language / Язык">
+      <button type="button" data-set="en" aria-pressed="true">EN</button>
+      <button type="button" data-set="ru" aria-pressed="false">РУ</button>
+    </div>
+  </header>
+
+  <main class="grid">
+    <a class="card" href="/hvac-pro-calculator/">
+      <div class="top">
+        <div class="ico"><img src="/hvac-pro-calculator/icon.png" alt=""></div>
+        <h2><span lang="en">HVAC Pro Calculator</span><span lang="ru">Калькулятор HVAC Pro</span></h2>
+      </div>
+      <p><span lang="en">Field calculator for sheet-metal math in feet, inches and fractions, trade geometry and ASHRAE equal-friction duct sizing.</span><span lang="ru">Полевой калькулятор: расчёты sheet metal в футах, дюймах и дробях, геометрия для работы и подбор duct по ASHRAE equal friction.</span></p>
+      <div class="tags"><span class="tag">HVAC</span><span class="tag">Sheet metal</span><span class="tag">Duct sizing</span></div>
+      <span class="go"><span lang="en">Open calculator →</span><span lang="ru">Открыть калькулятор →</span></span>
+    </a>
+
+    <div class="card off" id="card-trainer">
+      <div class="top">
+        <div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="5" width="18" height="23" rx="2.5"/><path d="M12 5V3.5h8V5"/><path d="M11.5 13.5l2.5 2.5 5-5"/><path d="M11.5 21h9"/></svg></div>
+        <h2><span lang="en">Sheet Metal Apprentice Test Trainer</span><span lang="ru">Тренажёр к тестам sheet metal apprentice</span></h2>
+      </div>
+      <p><span lang="en">Practice the written-test questions of the sheet metal apprenticeship: welding, layout, math, transitions, safety. Every answer explained, drawings included. English / Russian.</span><span lang="ru">Вопросы письменных тестов sheet metal apprenticeship: сварка, layout, математика, transitions, безопасность. Каждый ответ с пояснением, с чертежами. Английский / русский.</span></p>
+      <span class="soon"><span lang="en">In progress — first part coming soon</span><span lang="ru">В работе — первая часть скоро</span></span>
+    </div>
+
+    <a class="card" href="/wa-moto-prep/">
+      <div class="top">
+        <div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="21" r="4.5"/><circle cx="25" cy="21" r="4.5"/><path d="M7 21l5-8h7l6 8"/><path d="M12 13l3 8h4"/><path d="M19 13l-1.5-4H21"/></svg></div>
+        <h2><span lang="en">WA Motorcycle Knowledge Test</span><span lang="ru">Тест на мотоцикл — штат Вашингтон</span></h2>
+      </div>
+      <p><span lang="en">Practice for the Washington motorcycle endorsement knowledge test: 188 questions checked against the official manual, sets of 25 like the real test.</span><span lang="ru">Подготовка к теории на мотоцикл (endorsement) в штате Вашингтон: 188 вопросов, сверенных с официальным руководством, наборы по 25, как на экзамене.</span></p>
+      <div class="tags"><span class="tag">Motorcycle</span><span class="tag">Washington</span><span class="tag">EN / RU</span></div>
+      <span class="go"><span lang="en">Start practice →</span><span lang="ru">Начать тренировку →</span></span>
+    </a>
+
+    <a class="card" href="/mr-bb-game/">
+      <div class="top">
+        <div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="10" width="26" height="14" rx="7"/><path d="M10 14v6M7 17h6"/><circle cx="21" cy="15.5" r="1.2" fill="currentColor"/><circle cx="24" cy="18.5" r="1.2" fill="currentColor"/></svg></div>
+        <h2>Mr. BB — Duct Run</h2>
+      </div>
+      <p><span lang="en">A small HVAC construction platformer: collect ductwork and dodge falling mastic.</span><span lang="ru">Небольшая игра-платформер про HVAC-стройку: собирай ductwork и уворачивайся от падающего mastic.</span></p>
+      <div class="tags"><span class="tag">Game</span></div>
+      <span class="go"><span lang="en">Play →</span><span lang="ru">Играть →</span></span>
+    </a>
+  </main>
+
+  <footer><span lang="en">Free to use. No ads, no sign-up.</span><span lang="ru">Бесплатно. Без рекламы и регистрации.</span></footer>
+</div>
+<script>
+(function(){
+  var root=document.documentElement;
+  function paint(l){
+    root.setAttribute("data-lang",l); root.lang=l;
+    document.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed", String(b.getAttribute("data-set")===l));});
+  }
+  paint(root.getAttribute("data-lang")||"en");
+  document.querySelectorAll(".lang button").forEach(function(b){
+    b.addEventListener("click",function(){var l=b.getAttribute("data-set");try{localStorage.setItem("home_lang",l);}catch(e){} paint(l);});
+  });
+})();
+</script>
+</body>
+</html>
