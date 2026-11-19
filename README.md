@@ -6,6 +6,6 @@ Links to:
 - HVAC Pro Calculator — https://sergeisysoev.github.io/hvac-pro-calculator/
 - WA Motorcycle Knowledge Test — https://sergeisysoev.github.io/wa-moto-prep/
 - Mr. BB — Duct Run — https://sergeisysoev.github.io/mr-bb-game/
-- Sheet Metal Apprentice Test Trainer — in progress
+- Sheet Metal Apprentice Test Trainer — https://sergeisysoev.github.io/sheet-metal-tests/
 
 Static page, no build step. English / Russian toggle.
